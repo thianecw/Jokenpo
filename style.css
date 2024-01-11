@@ -8,7 +8,8 @@
 
 img {
     height: 150px;
-    width: 200px;
+    width: 380px;
+    margin-bottom: 40px;
 }
 
 body {
@@ -17,11 +18,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .container {
     padding: 30px;
-    background-color: #f9e218;
+    background-image: url(https://img.myloview.com.br/quadros/retro-raios-comic-fundo-amarelo-raster-gradiente-halftone-estilo-pop-art-700-75205829.jpg);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -43,6 +45,12 @@ button {
     border: none;
     border-radius: 40px;
     transition: opacity 0.5s ease-in-out;
+}
+
+.word {
+display: grid;
+place-items: center;
+background-color: antiquewhite;
 }
 
 button:hover {
@@ -74,10 +82,18 @@ p {
 }
 
 .your-score span {
-    color: #90c2b3;
+    color: rgb(16, 116, 16);
     font-size: bold;
 }
 
 .machine-score span {
-    color: #e5308ae7
+    color: red
+}
+
+@media screen and (max-width:750px) {
+    .container {
+        padding: 10px;
+    }
+
+
 }
